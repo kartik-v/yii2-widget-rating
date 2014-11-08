@@ -29,7 +29,7 @@ to the ```require``` section of your `composer.json` file.
 
 ## Demo
 
-You can refer detailed [documentation and demos](http://demos.krajee.com/widget-details/rating) on usage of the extension.
+You can refer detailed [documentation and demos](http://demos.krajee.com/widget-details/star-rating) on usage of the extension.
 
 ## Usage
 
