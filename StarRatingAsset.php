@@ -7,7 +7,7 @@
  * @version 1.0.0
  */
 
-namespace kartik\widgets;
+namespace kartik\rating;
 
 use Yii;
 
