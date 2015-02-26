@@ -1,6 +1,12 @@
 yii2-widget-rating
 ==================
 
+[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-widget-rating/v/stable.svg)](https://packagist.org/packages/kartik-v/yii2-widget-rating)
+[![License](https://poser.pugx.org/kartik-v/yii2-widget-rating/license.svg)](https://packagist.org/packages/kartik-v/yii2-widget-rating)
+[![Total Downloads](https://poser.pugx.org/kartik-v/yii2-widget-rating/downloads.svg)](https://packagist.org/packages/kartik-v/yii2-widget-rating)
+[![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-widget-rating/d/monthly.png)](https://packagist.org/packages/kartik-v/yii2-widget-rating)
+[![Daily Downloads](https://poser.pugx.org/kartik-v/yii2-widget-rating/d/daily.png)](https://packagist.org/packages/kartik-v/yii2-widget-rating)
+
 The StarRating widget is a wrapper for the [Bootstrap Star Rating Plugin](http://plugins.krajee.com/star-rating) JQuery Plugin designed by Krajee. This plugin is a simple yet powerful JQuery star rating plugin for Bootstrap. Developed with a focus on utlizing pure CSS-3 styling to render the control.
 
 > NOTE: This extension is a sub repo split of [yii2-widgets](https://github.com/kartik-v/yii2-widgets). The split has been done since 08-Nov-2014 to allow developers to install this specific widget in isolation if needed. One can also use the extension the previous way with the whole suite of [yii2-widgets](http://demos.krajee.com/widgets).
