@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2016
  * @package yii2-widgets
  * @subpackage yii2-widget-rating
  * @version 1.0.0
@@ -9,19 +9,14 @@
 
 namespace kartik\rating;
 
+use kartik\base\InputWidget;
 use Yii;
 use yii\helpers\Html;
-use yii\helpers\ArrayHelper;
-use yii\base\InvalidConfigException;
-use yii\web\View;
-use yii\web\JsExpression;
 
 /**
- * StarRating widget is a wrapper widget for the Bootstrap Star Rating plugin by Krajee.
- * This plugin is a simple star rating yet powerful control that converts a  'number' input
- * to a star rating control using JQuery. The widget is styled for Bootstrap 3.0.
- *
- * Upgraded for the new plugin support. Includes fractional ratings with editable star
+ * StarRating widget is a wrapper widget for the Bootstrap Star Rating plugin by Krajee. This plugin is a simple star
+ * rating yet powerful control that converts a  'number' input to a star rating control using JQuery. The widget is
+ * styled for Bootstrap 3.0. Upgraded for the new plugin support. Includes fractional ratings with editable star
  * symbol, RTL inputs, and custom styling.
  *
  * @see http://plugins.krajee.com/star-rating
@@ -29,15 +24,18 @@ use yii\web\JsExpression;
  * @author Kartik Visweswaran <kartikv2@gmail.com>
  * @since 1.0
  */
-class StarRating extends \kartik\base\InputWidget
+class StarRating extends InputWidget
 {
     /**
-     * @inherit doc
-     * @throw InvalidConfigException
+     * @inheritdoc
      */
-    public function init()
+    public $pluginName = 'rating';
+
+    /**
+     * @inheritdoc
+     */
+    public function run()
     {
-        parent::init();
         $this->registerAssets();
         if ($this->pluginLoading) {
             Html::addCssClass($this->options, 'rating-loading');
@@ -52,6 +50,6 @@ class StarRating extends \kartik\base\InputWidget
     {
         $view = $this->getView();
         StarRatingAsset::register($view);
-        $this->registerPlugin('rating');
+        $this->registerPlugin($this->pluginName);
     }
 }
