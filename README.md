@@ -1,7 +1,8 @@
 yii2-widget-rating
 ==================
 
-[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-widget-rating/v/stable)](https://packagist.org/packages/kartik-v/yii2-widget-rating)
+[![Stable Version](https://poser.pugx.org/kartik-v/yii2-widget-rating/v/stable)](https://packagist.org/packages/kartik-v/yii2-widget-rating)
+[![Unstable Version](https://poser.pugx.org/kartik-v/yii2-widget-rating/v/unstable)](https://packagist.org/packages/kartik-v/yii2-widget-rating)
 [![License](https://poser.pugx.org/kartik-v/yii2-widget-rating/license)](https://packagist.org/packages/kartik-v/yii2-widget-rating)
 [![Total Downloads](https://poser.pugx.org/kartik-v/yii2-widget-rating/downloads)](https://packagist.org/packages/kartik-v/yii2-widget-rating)
 [![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-widget-rating/d/monthly)](https://packagist.org/packages/kartik-v/yii2-widget-rating)
@@ -31,7 +32,7 @@ to the ```require``` section of your `composer.json` file.
 
 ## Latest Release
 
-> NOTE: The latest version of the module is v1.0.1. Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-widget-rating/blob/master/CHANGE.md) for details.
+> NOTE: The latest version of the module is v1.0.2. Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-widget-rating/blob/master/CHANGE.md) for details.
 
 ## Demo
 
