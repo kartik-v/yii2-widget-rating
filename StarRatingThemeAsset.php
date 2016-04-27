@@ -23,12 +23,14 @@ class StarRatingThemeAsset extends AssetBundle
      * @inheritdoc
      */
     public $sourcePath = '@vendor/kartik-v/bootstrap-star-rating';
-
+ 
     /**
      * @inheritdoc
      */
-    public $depends = [
-        'kartik\rating\StarRatingAsset'
+    public function init()
+    {
+        $this->depends = array_merge($this->depends, ['kartik\rating\StarRatingAsset']);
+        parent::init();
     ];
     
     /**
