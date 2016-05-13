@@ -31,7 +31,7 @@ class StarRatingThemeAsset extends AssetBundle
     {
         $this->depends = array_merge($this->depends, ['kartik\rating\StarRatingAsset']);
         parent::init();
-    ];
+    }
     
     /**
      * Add star rating theme file
