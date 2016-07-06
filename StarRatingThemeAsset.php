@@ -40,6 +40,7 @@ class StarRatingThemeAsset extends AssetBundle
      */
     public function addTheme($theme) 
     {
-        $this->css[] = "css/theme-{$theme}." . (YII_DEBUG ? "css" : "min.css");
+        $this->js[] = "themes/{$theme}/theme." . (YII_DEBUG ? "js" : "min.js");
+        $this->css[] = "themes/{$theme}/theme." . (YII_DEBUG ? "css" : "min.css");
     }
 }
