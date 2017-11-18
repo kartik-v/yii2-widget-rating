@@ -1,10 +1,10 @@
 <?php
 
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2016
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2017
  * @package yii2-widgets
  * @subpackage yii2-widget-rating
- * @version 1.0.2
+ * @version 1.0.3
  */
 
 namespace kartik\rating;
@@ -57,11 +57,11 @@ class StarRating extends InputWidget
     public function registerAssets()
     {
         $view = $this->getView();
-        StarRatingAsset::register($view)->addLanguage($this->language, 'star-rating_locale_');
         $theme = ArrayHelper::getValue($this->pluginOptions, 'theme');
         if (!empty($theme) && in_array($theme, self::$_themes)) {
             StarRatingThemeAsset::register($view)->addTheme($theme);
         }
+        StarRatingAsset::register($view)->addLanguage($this->language, '', 'js/locales');
         $this->registerPlugin($this->pluginName);
     }
 }

@@ -1,6 +1,13 @@
 Change Log: `yii2-widget-rating`
 ================================
 
+## Version 1.0.3
+
+**Date:** 18-Nov-2017
+
+- Add github contribution and issue/PR log templates.
+- (enh #10): Correct language initialization.
+
 ## Version 1.0.2
 
 **Date:** 18-Feb-2016
