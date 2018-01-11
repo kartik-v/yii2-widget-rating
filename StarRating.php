@@ -48,7 +48,7 @@ class StarRating extends InputWidget
         if ($this->pluginLoading) {
             Html::addCssClass($this->options, 'rating-loading');
         }
-        echo $this->getInput('textInput');
+        echo $this->getInput('hiddenInput');
     }
 
     /**
