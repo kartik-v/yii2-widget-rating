@@ -32,7 +32,7 @@ to the ```require``` section of your `composer.json` file.
 
 ## Latest Release
 
-> NOTE: The latest version of the module is v1.0.3. Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-widget-rating/blob/master/CHANGE.md) for details.
+> NOTE: Refer the [CHANGE LOG](https://github.com/kartik-v/yii2-widget-rating/blob/master/CHANGE.md) for details on changes to various releases.
 
 ## Demo
 
@@ -58,4 +58,4 @@ echo StarRating::widget([
 
 ## License
 
-**yii2-widget-rating** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.
+**yii2-widget-rating** is released under the BSD-3-Clause License. See the bundled `LICENSE.md` for details.

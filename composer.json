@@ -4,7 +4,7 @@
     "keywords": ["yii2", "extension", "widget", "input", "form", "rating", "star", "bootstrap", "jquery", "plugin"],
     "homepage": "https://github.com/kartik-v/yii2-widget-rating",
     "type": "yii2-extension",
-    "license": "BSD 3-Clause",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Kartik Visweswaran",
@@ -13,12 +13,12 @@
         }
     ],
     "require": {
-        "kartik-v/yii2-krajee-base": "*",
-        "kartik-v/bootstrap-star-rating": "*"
+        "kartik-v/yii2-krajee-base": ">=1.9",
+        "kartik-v/bootstrap-star-rating": "~4.0"
     },
     "autoload": {
         "psr-4": {
-            "kartik\\rating\\": ""
+            "kartik\\rating\\": "src"
         }
     },
     "extra": {

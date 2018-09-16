@@ -1,19 +1,17 @@
 <?php
 
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2017
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2018
  * @package yii2-widgets
  * @subpackage yii2-widget-rating
- * @version 1.0.3
+ * @version 1.0.4
  */
 
 namespace kartik\rating;
 
 use kartik\base\InputWidget;
-use Yii;
 use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
-use kartik\base\TranslationTrait;
 
 /**
  * StarRating widget is a wrapper widget for the Bootstrap Star Rating plugin by Krajee. This plugin is a simple star
@@ -36,7 +34,7 @@ class StarRating extends InputWidget
     /**
      * @var array the list of inbuilt themes
      */
-    private static $_themes = ['krajee-fa', 'krajee-uni', 'krajee-svg'];
+    private static $_themes = ['krajee-fa', 'krajee-fas', 'krajee-uni', 'krajee-svg'];
 
     /**
      * @inheritdoc
@@ -44,6 +42,9 @@ class StarRating extends InputWidget
     public function run()
     {
         $this->initLanguage();
+        if ($this->isBs4() && !isset($this->pluginOptions['theme'])) {
+            $this->pluginOptions['theme'] = 'krajee-fas';
+        }
         $this->registerAssets();
         if ($this->pluginLoading) {
             Html::addCssClass($this->options, 'rating-loading');
