@@ -1,6 +1,12 @@
 Change Log: `yii2-widget-rating`
 ================================
 
+## Version 1.0.5
+
+**Date:** 20-Nov-2021
+
+- (enh #16): Enhancements to support Bootstrap v5.x
+
 ## Version 1.0.4
 
 **Date:** 16-Sep-2018

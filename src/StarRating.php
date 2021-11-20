@@ -1,10 +1,10 @@
 <?php
 
 /**
- * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2018
+ * @copyright Copyright &copy; Kartik Visweswaran, Krajee.com, 2014 - 2021
  * @package yii2-widgets
  * @subpackage yii2-widget-rating
- * @version 1.0.4
+ * @version 1.0.5
  */
 
 namespace kartik\rating;
@@ -42,8 +42,8 @@ class StarRating extends InputWidget
     public function run()
     {
         $this->initLanguage();
-        if ($this->isBs4() && !isset($this->pluginOptions['theme'])) {
-            $this->pluginOptions['theme'] = 'krajee-fas';
+        if (!isset($this->pluginOptions['theme'])) {
+            $this->pluginOptions['theme'] = 'krajee-svg';
         }
         $this->registerAssets();
         if ($this->pluginLoading) {
